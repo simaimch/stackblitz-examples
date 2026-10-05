@@ -21,7 +21,7 @@ scene.add(sun);
 // Einfaches 3D-Modell
 const mesh = new THREE.Mesh(
   new THREE.TorusKnotGeometry(1, 0.35, 160, 24),
-  new THREE.MeshStandardMaterial({ color: 0x4f9dff, metalness: 0.3, roughness: 0.35 })
+  new THREE.MeshStandardMaterial({ color: 0xee0000, metalness: 0.3, roughness: 0.35 })
 );
 scene.add(mesh);
 
