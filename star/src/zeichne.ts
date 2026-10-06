@@ -16,5 +16,6 @@ export default function zeichne(p:p5){
     nächstePolygonLinie(p, 300, 80);
     
     zeichnePolygon(p);
+    
 
 }
