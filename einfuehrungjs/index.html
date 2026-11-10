@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript-Einführung</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+      #ausgabe { background: #1e1e1e; color: #e8e8e8; font-family: Consolas, monospace;
+                 padding: 1rem; border-radius: 6px; min-height: 4rem; white-space: pre-wrap; }
+      .zeile { padding: 2px 0; border-bottom: 1px solid #333; }
+      .warn { color: #f5c542; }
+      .fehler { color: #ff6b6b; }
+    </style>
   </head>
   <body>
     <h1>JavaScript-Einführung</h1>
-    <p>Die Ausgabe deines Programms findest du in der <strong>Konsole</strong>.</p>
+    <p>Ausgabe deines Programms:</p>
+    <div id="ausgabe"></div>
+
+    <!-- Nicht ändern: zeigt console.log zusätzlich auf der Seite an -->
+    <script type="module" src="/ausgabe.js"></script>
+    <!-- Welche Aufgabe läuft, legst du in main.js fest -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>
