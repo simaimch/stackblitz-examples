@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Snake 3D</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="spielbereich"></div>
+
+    <div id="hud">
+      <span>Punkte: <b id="punkte">0</b></span>
+      <span>Länge: <b id="laenge">0</b></span>
+    </div>
+
+    <div id="overlay">
+      <h1 id="overlay-titel">Snake 3D</h1>
+      <p id="overlay-text">Lade …</p>
+    </div>
+
+    <!-- Fertige Teile -->
+    <script src="js/zustand.js"></script>
+    <script src="js/welt.js"></script>
+
+    <!-- Deine Aufgaben -->
+    <script src="js/aufgaben/aufgabe01.js"></script>
+    <script src="js/aufgaben/aufgabe02.js"></script>
+    <script src="js/aufgaben/aufgabe03.js"></script>
+    <script src="js/aufgaben/aufgabe04.js"></script>
+    <script src="js/aufgaben/aufgabe05.js"></script>
+    <script src="js/aufgaben/aufgabe06.js"></script>
+    <script src="js/aufgaben/aufgabe07.js"></script>
+    <script src="js/aufgaben/aufgabe08.js"></script>
+    <script src="js/aufgaben/aufgabe09.js"></script>
+    <script src="js/aufgaben/aufgabe10.js"></script>
+    <script src="js/aufgaben/aufgabe11.js"></script>
+    <script src="js/aufgaben/aufgabe12.js"></script>
+
+    <!-- Spielablauf, Steuerung, Grafik -->
+    <script src="js/spiel.js"></script>
+    <script src="js/eingabe.js"></script>
+    <script src="js/darstellung.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Three.js vom CDN laden, dann das Spiel starten -->
+    <script type="module">
+      import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js';
+      window.THREE = THREE;
+      starteSpiel();
+    </script>
+  </body>
+</html>
